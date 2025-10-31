@@ -15,7 +15,7 @@ node {
 
         stage('Test') {
             // 테스트 실행
-            bat 'npm test'
+            bat 'npm test -- --watchAll=false --passWithNoTests'
         }
 
         stage('Start') {
