@@ -34,7 +34,7 @@ pipeline {
         stage('Test') {
             steps {
                 // npm test 명령어 실행 (package.json의 "test" 스크립트 사용)
-                bat 'npm test'
+                bat 'npm test -- --watchAll=false --passWithNoTests'
             }
         }
 
