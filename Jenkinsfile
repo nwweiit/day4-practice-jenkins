@@ -6,10 +6,10 @@ pipeline {
     agent any
 
     // 🌍 파이프라인 전체에서 공통으로 사용할 환경 변수 설정
-    environment {
-        // macOS/Homebrew 환경에서 Node.js, npm 등이 설치된 경로를 인식하도록 PATH 재설정
-        //PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    }
+    // environment {
+    //     // macOS/Homebrew 환경에서 Node.js, npm 등이 설치된 경로를 인식하도록 PATH 재설정
+    //     //PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    // }
 
     // 🏗️ 실제 작업 단계를 정의하는 블록
     stages {
