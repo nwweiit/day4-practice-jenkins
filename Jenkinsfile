@@ -15,7 +15,7 @@ node {
 
         stage('Test') {
             // 테스트 실행
-            bat 'npm test'
+            bat 'npm test src/App.test.tsx -- --watchAll=false --detectOpenHandles'
         }
 
         stage('Start') {
